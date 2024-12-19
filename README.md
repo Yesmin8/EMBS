@@ -41,9 +41,6 @@ This project is part of the EMBS challenge and focuses on developing a mental he
 
 ---
 
-
----
-
 ## Prerequisites
 
 ### System Requirements:
