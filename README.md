@@ -28,7 +28,7 @@ This project is part of the EMBS challenge and focuses on developing a mental he
 ---
 
 ## Project Structure
-.
+
 ├── main.py              # Main script to run the NLP pipeline
 
 ├── preprocessing.py     # Preprocessing text module
