@@ -58,10 +58,9 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 ---
-##Usage
+## Usage
 
-###Activate the virtual environment:
-
+### Activate the virtual environment:
 bash
 Copier le code
 ```
