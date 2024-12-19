@@ -1,4 +1,4 @@
-# EMBS Mental Health NLP Project
+# EMBS Mental Health NLP Project Part
 
 This project is part of the EMBS challenge and focuses on developing a mental health chatbot and analysis system. It incorporates advanced NLP techniques to analyze user-generated text and offers features such as emotion detection, toxicity analysis, and sentiment evaluation.
 
