@@ -22,7 +22,7 @@ This project is part of the EMBS challenge and focuses on developing a mental he
    - Helps maintain a healthy and supportive environment.
 
 5. **Community Analysis**  
-   - Processes and analyzes posts and comments in the chatbot's community platform.  
+   - Processes and analyzes posts and comments in the application, and integrates the NLP system into the chatbot to enhance interactions and insights.  
    - Detects trends and ensures content aligns with mental health support goals.
 
 ---
