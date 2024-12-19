@@ -62,6 +62,7 @@ python -m spacy download en_core_web_sm
 ```
 ---
 ##Usage
+
 ###Activate the virtual environment:
 
 bash
