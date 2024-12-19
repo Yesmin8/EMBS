@@ -30,13 +30,21 @@ This project is part of the EMBS challenge and focuses on developing a mental he
 ## Project Structure
 .
 ├── main.py              # Main script to run the NLP pipeline
+
 ├── preprocessing.py     # Preprocessing text module
+
 ├── sentiment.py         # Sentiment analysis module
+
 ├── emotion.py           # Emotion detection module
+
 ├── toxicity.py          # Toxicity analysis module
+
 ├── config.py            # Configuration file for API settings and utilities
+
 ├── api_utils.py         # Helper functions for making API requests
+
 ├── requirements.txt     # Required Python dependencies
+
 ├── venv/                # Virtual environment
 
 ---
