@@ -9,7 +9,7 @@ def analyze_emotion(text, score_threshold=0.1):
         payload = {"inputs": text}
         result = call_huggingface_api(EMOTION_API_URL, payload)
 
-        # Filter and sort emotions based on score threshold
+        
         emotions = [
             {"emotion": item["label"], "score": item["score"]}
             for item in result[0] if item["score"] >= score_threshold
@@ -19,10 +19,10 @@ def analyze_emotion(text, score_threshold=0.1):
             logger.info("No significant emotions detected.")
             return {"type": "Emotion", "grouped_emotions": None, "individual_emotions": None}
 
-        # Sort emotions by score in descending order
+       
         sorted_emotions = sorted(emotions, key=lambda x: x["score"], reverse=True)
 
-        # Aggregate emotions into groups
+      
         grouped_results = {"positive": 0, "negative": 0, "neutral": 0, "mixed": 0}
         for emotion in sorted_emotions:
             for category, group in grouped_emotions.items():
@@ -30,7 +30,7 @@ def analyze_emotion(text, score_threshold=0.1):
                     grouped_results[category] += emotion["score"]
                     break
 
-        # Normalize scores to ensure they sum to 1 (optional)
+   
         total_score = sum(grouped_results.values())
         if total_score > 0:
             grouped_results = {key: score / total_score for key, score in grouped_results.items()}
@@ -39,7 +39,7 @@ def analyze_emotion(text, score_threshold=0.1):
         return {
             "type": "Emotion",
             "grouped_emotions": grouped_results,
-            "individual_emotions": sorted_emotions  # Include individual emotions
+            "individual_emotions": sorted_emotions  
         }
 
     except Exception as e:
