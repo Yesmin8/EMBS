@@ -1,0 +1,9 @@
+ # Ignorer les fichiers .env contenant des informations sensibles
+.env
+# Ignorer le dossier __pycache__ généré par Python
+__pycache__/
+# Ignorer les environnements virtuels
+venv/
+env/
+# Ignorer les fichiers de cache
+*.log
